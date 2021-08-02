@@ -1,19 +1,15 @@
 import React from 'react';
-import './App.css';
 import Join from './images/join.svg'
 import Send from './images/send.svg'
 
-
 const App = () => 
 {
-    // Ce n'est pas un message container, il ne contientp as que des messages
-    // description conteneur doit englobé tout l'espace
-    // pensé au gradients
-    // Par ailleurs la description ne doit pas prendre tou l'espace dispo
     // Pas les m^mes arrondies sur les message
+    // Texte gris si c'est from other user
+    // Responsive, tester sur un petit écran style iphone
     return <>
         <div className="container">
-            <div className="scouting-container">
+            <div className="username-container">
                 <div className="title">Scouting Group</div>
                 <input className="username" placeholder="Username"/>
             </div>
@@ -28,44 +24,44 @@ const App = () =>
             <div className="date-message">Tuesday, April 7th at 1:21 PM</div>
 
             <div className="messageFromOtherUser">
-                <div className="title-message">Jess sent a message to the group</div> 
+                <div className="messageTitle">Jess sent a message to the group</div> 
                 <div className="conversationFromOtherUser">
                     <img className="profilPhotoFromOtherUser"/>
                     <div className="message-container">
-                        <div className="message-received">Awesome!It's going to amazing deal!</div>
-                        <div className="message-received">I've ran through different docs</div>
-                        <div className="message-received">Hope for the best</div>
+                        <div className="message">Awesome!It's going to amazing deal!</div>
+                        <div className="message">I've ran through different docs</div>
+                        <div className="message">Hope for the best</div>
                     </div>
                 </div>
             </div>
 
-            <div className="messagetoEverybody">
-                <div className="title-message">You sent a message to everybody</div> 
-                <div className="conversationToEverybody">
+            <div className="messageFromUser">
+                <div className="messageTitle">You sent a message to everybody</div> 
+                <div className="conversationContainer">
                     <img className="profilPhoto"/>
                     <div className="message-container">
-                        <div className="message-sent">Thanks you for sending the deal, I'll review it
+                        <div className="message">Thanks you for sending the deal, I'll review it
                         and get come back to you shortly</div>
                     </div>
                 </div>
             </div>
 
             <div className="messageFromOtherUser">
-                <div className="title-message">Jess sent a message to the group</div> 
+                <div className="messageTitle">Jess sent a message to the group</div> 
                 <div className="conversationFromOtherUser">
                     <img className="profilPhotoFromOtherUser"/>
                     <div className="message-container">
-                        <div className="message-received">Awesome!It's going to amazing deal!</div>
+                        <div className="message">Awesome!It's going to amazing deal!</div>
                     </div>
                 </div>
             </div>
 
-            <div className="messagetoEverybody">
-                <div className="title-message">You sent a message to everybody</div> 
-                <div className="conversationToEverybody">
+            <div className="messageFromUser">
+                <div className="messageTitle">You sent a message to everybody</div> 
+                <div className="conversationContainer">
                     <img className="profilPhoto"/>
                     <div className="message-container">
-                        <div className="message-sent">Leo, can you provide the lastest doc ?</div>
+                        <div className="message">Leo, can you provide the lastest doc ?</div>
                     </div>
                 </div>
             </div>

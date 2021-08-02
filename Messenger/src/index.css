@@ -6,12 +6,11 @@ body {
    #14101e, #161122, #181227, #1a122b);
   color: #c9c5c5;
   font-family: 'Noto Sans JP', sans-serif;
-  
 }
 
 .container { padding: 0 32px; }
 
-.scouting-container 
+.username-container 
 {
   display: flex; 
   justify-content: space-between; 
@@ -19,16 +18,6 @@ body {
   padding: 32px 0px;
 }
 
-.username-container
-{
-  margin: auto;
-  background-color: transparent;
-  color: #777474;
-  border: #777474 1px solid;
-  border-radius: 8px;
-
-  padding: 8px 20px;
-}
 
 .title { font-size: 28px; color: white;}
 
@@ -63,7 +52,7 @@ body {
   font-weight: 100;
 }
 
-.title-message 
+.messageTitle 
 { 
   text-align: center; 
   padding: 20px 0;
@@ -73,9 +62,9 @@ body {
 
 .conversationFromOtherUser { display: flex; gap: 12px; }
 
-.conversationToEverybody { display: flex; justify-content: flex-end; gap: 12px;}
+.conversationContainer { display: flex; justify-content: flex-end; gap: 12px;}
 
-.profilPhotoFromOtherUser
+.profilImage
 {
   background-image: url(images/user-profil.jpg);
   background-size: cover;
@@ -90,19 +79,20 @@ body {
   width: max-content;
   max-width: 340px;
     
-  border-radius: 20px;
+  border-radius: 24px;
   
-  padding: 10px 20px;
+  padding: 7px 24px;
   margin-bottom: 5px;
 
   font-size: 16px;
   line-height: 32px;
 }
 
-.messageFromOtherUser > .message { background-color: #222236; }
-.messageFromUser > .message { background-color: #6549F1; }
+.messageFromOtherUser .message { background-color: #222236; }
+.messageFromUser .message { background-color: #6549F1; }
+.messageFromUser
 
-.profilPhoto
+.profilImage
 {
   background-image: url(images/user2-profil.jpg);
   background-size: cover;
@@ -116,8 +106,7 @@ body {
   display: flex;
   gap : 8px;
 
-  margin-top: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .message-to-everybody-container { margin-top : 152px; }
 
