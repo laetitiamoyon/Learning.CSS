@@ -60,19 +60,9 @@ body {
   color: rgb(40, 190, 40);
 }
 
-.conversationFromOtherUser { display: flex; gap: 12px; }
+.conversationContainer { display: flex; gap: 12px; }
 
-.conversationContainer { display: flex; justify-content: flex-end; gap: 12px;}
-
-.profilImage
-{
-  background-image: url(images/user-profil.jpg);
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
+.messageFromUser > .conversationContainer { flex-direction: row-reverse; }
 
 .message
 {
@@ -90,14 +80,13 @@ body {
 
 .messageFromOtherUser .message { background-color: #222236; }
 .messageFromUser .message { background-color: #6549F1; }
-.messageFromUser
 
 .profilImage
 {
   background-image: url(images/user2-profil.jpg);
   background-size: cover;
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
 }
 

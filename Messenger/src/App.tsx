@@ -25,8 +25,8 @@ const App = () =>
 
             <div className="messageFromOtherUser">
                 <div className="messageTitle">Jess sent a message to the group</div> 
-                <div className="conversationFromOtherUser">
-                    <img className="profilPhotoFromOtherUser"/>
+                <div className="conversationContainer">
+                    <img className="profilImage"/>
                     <div className="message-container">
                         <div className="message">Awesome!It's going to amazing deal!</div>
                         <div className="message">I've ran through different docs</div>
@@ -38,7 +38,7 @@ const App = () =>
             <div className="messageFromUser">
                 <div className="messageTitle">You sent a message to everybody</div> 
                 <div className="conversationContainer">
-                    <img className="profilPhoto"/>
+                    <img className="profilImage"/>
                     <div className="message-container">
                         <div className="message">Thanks you for sending the deal, I'll review it
                         and get come back to you shortly</div>
@@ -48,8 +48,8 @@ const App = () =>
 
             <div className="messageFromOtherUser">
                 <div className="messageTitle">Jess sent a message to the group</div> 
-                <div className="conversationFromOtherUser">
-                    <img className="profilPhotoFromOtherUser"/>
+                <div className="conversationContainer">
+                    <img className="profilImage"/>
                     <div className="message-container">
                         <div className="message">Awesome!It's going to amazing deal!</div>
                     </div>
@@ -59,7 +59,7 @@ const App = () =>
             <div className="messageFromUser">
                 <div className="messageTitle">You sent a message to everybody</div> 
                 <div className="conversationContainer">
-                    <img className="profilPhoto"/>
+                    <img className="profilImage"/>
                     <div className="message-container">
                         <div className="message">Leo, can you provide the lastest doc ?</div>
                     </div>
