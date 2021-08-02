@@ -66,6 +66,8 @@ const App = () =>
                 </div>
             </div>
 
+            
+
             <div className="messageDestinationInputContainer">
                 <input className="input" placeholder="Write a message..."/>
                 <img src={Send}/>
