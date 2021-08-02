@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-body {
+body
+{
   margin: 0;
-  background-image: linear-gradient(to left bottom, #120f19,
-   #14101e, #161122, #181227, #1a122b);
-  color: #c9c5c5;
+  background-image: linear-gradient(to left bottom, #120f19, #14101e, #161122, #181227, #1a122b);
+
+  color: #8A8596;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 .container { padding: 0 32px; }
 
-.username-container 
+.usernameContainer 
 {
   display: flex; 
   justify-content: space-between; 
@@ -18,10 +19,9 @@ body {
   padding: 32px 0px;
 }
 
-
 .title { font-size: 28px; color: white;}
 
-.description-container
+.descriptionContainer
 {
   background: rgb(27,32,52);
   background: linear-gradient(90deg, rgba(27,32,52,1) 64%, rgba(21,20,32,1) 100%);
@@ -32,25 +32,20 @@ body {
   margin: 0 -32px;
 }
 
-.title-description
-{
-  color: #5B89D0;
-  margin-bottom: 10px;
-}
+.titleDescription { color: #5B89D0; margin-bottom: 10px; }
+.description { color: #536278; width: 480px }
 
-.text-description
-{
-  color: #536278;
-  width: 480px
-}
-
-.date-message
+.messageDate
 {
   text-align: center;
 
   margin: 32px 0;
   font-weight: 100;
 }
+
+.messageFromUser > .conversationContainer { flex-direction: row-reverse; }
+.messageFromOtherUser .message { background-color: #222236;}
+.messageFromUser .message { background-color: #6549F1; color: white;}
 
 .messageTitle 
 { 
@@ -62,7 +57,14 @@ body {
 
 .conversationContainer { display: flex; gap: 12px; }
 
-.messageFromUser > .conversationContainer { flex-direction: row-reverse; }
+.profilImage
+{
+  background-image: url(images/user2-profil.jpg);
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
 
 .message
 {
@@ -78,52 +80,28 @@ body {
   line-height: 32px;
 }
 
-.messageFromOtherUser .message { background-color: #222236; }
-.messageFromUser .message { background-color: #6549F1; }
 
-.profilImage
-{
-  background-image: url(images/user2-profil.jpg);
-  background-size: cover;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-}
-
-.message-to-everybody-container, .group-message-container, .private-message-container
+.messageDestinationInputContainer
 {
   display: flex;
   gap : 8px;
 
   margin-bottom: 12px;
 }
-.message-to-everybody-container { margin-top : 152px; }
+.messageDestinationInputContainer:first { margin-top : 152px; }
+.messageDestinationInputContainer > input { flex-grow : 1; }
 
-.message-to-everybody-container > input,
-.group-message-container > input,
-.private-message-container > input
-{
-  flex-grow : 1;
-}
-
-  .text-area, .text-area-group, .text-area-private, .username, .group-name
+.input
 {
   background-color: transparent;
+
+  font-size: 16px;
   color: #777474;
+
   border: #777474 1px solid;
   border-radius: 8px;
 
   padding: 12px 20px;
-
-
 }
-
-input:focus{
-  outline: none;
-  color: white;
-}
-
-input::placeholder{
-  font-size: 14px;
-}
-
+input:focus { outline: none; color: white; }
+input::placeholder { font-size: 16px; }
