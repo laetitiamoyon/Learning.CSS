@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to left bottom, #120f19,
+   #14101e, #161122, #181227, #1a122b);
+  color: #c9c5c5;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+.container { padding: 0 32px; }
+
+.scouting-container 
+{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 32px 0px;
+}
+
+.username-container
+{
+  margin: auto;
+  background-color: transparent;
+  color: #777474;
+  border: #777474 1px solid;
+  border-radius: 8px;
+
+  padding: 8px 20px;
+}
+
+.title { font-size: 28px; color: white;}
+
+.description-container
+{
+  background: rgb(27,32,52);
+  background: linear-gradient(90deg, rgba(27,32,52,1) 64%, rgba(21,20,32,1) 100%);
+
+  margin-top: 32px;
+
+  padding: 18px 32px;
+  margin: 0 -32px;
+}
+
+.title-description
+{
+  color: #5B89D0;
+  margin-bottom: 10px;
+}
+
+.text-description
+{
+  color: #536278;
+  width: 480px
+}
+
+.date-message
+{
+  text-align: center;
+
+  margin: 32px 0;
+  font-weight: 100;
+}
+
+.title-message 
+{ 
+  text-align: center; 
+  padding: 20px 0;
+  font-size: 14px;
+  color: rgb(40, 190, 40);
+}
+
+.conversationFromOtherUser { display: flex; gap: 12px; }
+
+.conversationToEverybody { display: flex; justify-content: flex-end; gap: 12px;}
+
+.profilPhotoFromOtherUser
+{
+  background-image: url(images/user-profil.jpg);
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+.message
+{
+  width: max-content;
+  max-width: 340px;
+    
+  border-radius: 20px;
+  
+  padding: 10px 20px;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.messageFromOtherUser > .message { background-color: #222236; }
+.messageFromUser > .message { background-color: #6549F1; }
+
+.profilPhoto
+{
+  background-image: url(images/user2-profil.jpg);
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.message-to-everybody-container, .group-message-container, .private-message-container
+{
+  display: flex;
+  gap : 8px;
+
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.message-to-everybody-container { margin-top : 152px; }
+
+.message-to-everybody-container > input,
+.group-message-container > input,
+.private-message-container > input
+{
+  flex-grow : 1;
+}
+
+  .text-area, .text-area-group, .text-area-private, .username, .group-name
+{
+  background-color: transparent;
+  color: #777474;
+  border: #777474 1px solid;
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+
+}
+
+input:focus{
+  outline: none;
+  color: white;
+}
+
+input::placeholder{
+  font-size: 14px;
+}
+
