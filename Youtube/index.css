@@ -487,12 +487,6 @@ body  { margin : -0; }
 @media screen and (max-width: 570px) { .video-element { width: 230px; height: 120px; margin-bottom: 110px;} }
 @media screen and (max-width: 520px) { .video-element { width: 330px; height: 210px; margin-bottom: 70px;} }
 
-@keyframes videoAnimation
-{
-    from { transform : scale(0); }
-    to { transform : scale(1); }
-}
-
 .video-element img
 {
     width : inherit;
